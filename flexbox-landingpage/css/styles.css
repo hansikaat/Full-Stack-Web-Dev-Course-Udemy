@@ -136,6 +136,33 @@ header {
     box-shadow: 0 5px 20px rgba(0, 0 , 0, .3);
 }
 
+.section-header {
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-box {
+    width: 250px;
+    height: 250px;
+    background-color: #F1F3Fa;
+    transition: .2s ease-in-out;
+}
+
+.portfolio-box:hover {
+    cursor: pointer; 
+    transform: scale(1.02);
+}
+
+.portfolio-object {
+    max-width: 250px;
+    margin: 1rem 0;
+}
 
 @media (max-width: 768px) {
     ul.topnav li a.nav-link {
@@ -171,8 +198,31 @@ header {
         display: block;
         line-height: 2;
     }
+    
+    .media-object {        
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .icon-right, icon-left {
+        order: 1;
+    }
+    
+    .blurb-wrapper-left, blurb-wrapper-right {
+        order: 2;
+        padding-top: 2rem;
+    }
+    
+    .portfolio-wrapper {
+        text-align: center;
+    }
        
 }
 
+@media (max-width: 599px) {
+    .portfolio-wrapper {
+        justify-content: center;
+    }
+}
 
 
