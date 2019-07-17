@@ -71,6 +71,11 @@ header {
     width: 100%
 }
 
+.services {
+    background-color: #F1F3fa;
+    padding: 4rem 1rem;
+}
+
 @media (max-width: 768px) {
     ul.topnav li a.nav-link {
         display: none;
