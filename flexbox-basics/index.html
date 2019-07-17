@@ -9,13 +9,25 @@
 			background: #51546A;
 			color: white;
 		}
-
-		.parent-1 {
-			display: flex;
-			align-items: stretch;
-		}
-
-		.parent-1 div {
+        
+        @media(min-width: 600px) {
+            .parent-1 {
+			display: flex;		
+		  }
+            
+            .parent-2 {
+            display: flex;
+            justify-content: space-between;
+            }           
+            
+        }        
+        
+        .parent-3 {
+               display: flex; 
+                justify-content: space-around;
+                flex-wrap: wrap-reverse;
+            }
+		.parent-1 div, .parent-2 div, .parent-3 img {
 			border: 1px solid #ccc;
 			padding: 10px;
 		}
@@ -34,6 +46,15 @@
 			flex: 3;
 			order: 3;
 		}
+        
+        .item-4 {
+            flex-basis: 25%;
+        }
+        
+        img {
+            width: 50px;
+            height: 50px;
+        }
 	</style>
 </head>
 <body>
@@ -50,6 +71,30 @@
 		<h3>Item Three</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 	</div>
+</div>
+
+<div class="parent-2">
+	<div class="item-4">
+		<h3>Item One</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+	</div>
+	<div class="item-4">
+		<h3>Item Two</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+	<div class="item-4">
+		<h3>Item Three</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+</div>
+
+<div class="parent-3">
+    <img src="https://assets.materialup.com/uploads/68005ddb-3a76-4752-8788-d08d2a403409/preview.png">
+    <img src="https://assets.materialup.com/uploads/68005ddb-3a76-4752-8788-d08d2a403409/preview.png">
+    <img src="https://assets.materialup.com/uploads/68005ddb-3a76-4752-8788-d08d2a403409/preview.png">
+    <img src="https://assets.materialup.com/uploads/68005ddb-3a76-4752-8788-d08d2a403409/preview.png">
+    <img src="https://assets.materialup.com/uploads/68005ddb-3a76-4752-8788-d08d2a403409/preview.png">
+    <img src="https://assets.materialup.com/uploads/68005ddb-3a76-4752-8788-d08d2a403409/preview.png">    
 </div>
 </body>
 </html>
