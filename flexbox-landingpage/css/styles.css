@@ -53,6 +53,24 @@ ul.topnav.responsive li a {
     display: none;   
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0; 
+}
+
+.headshot {
+    border-radius: 50%;
+    max-width: 300px;
+    width: 100%
+}
+
 @media (max-width: 768px) {
     ul.topnav li a.nav-link {
         display: none;
