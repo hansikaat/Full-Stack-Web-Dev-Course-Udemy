@@ -8,3 +8,39 @@ html, body {
     color: #303137;
     margin: 0;
 }
+
+.navbar {
+    display: flex;    
+    padding: 10px;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.brand, .nav-link {
+    text-transform: uppercase;
+    color: #303137;
+    
+}
+
+.brand {
+    font-size: 25px;
+}
+
+.sensei {
+    color: #66B6D3;
+}
+
+.topnav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+
+.topnav .nav-link {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
