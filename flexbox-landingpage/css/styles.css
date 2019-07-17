@@ -73,7 +73,7 @@ header {
     width: 100%
 }
 
-.services {
+.services, .contact-container {
     background-color: #F1F3fa;
     padding: 4rem 1rem;
 }
@@ -164,6 +164,31 @@ header {
     margin: 1rem 0;
 }
 
+form label {
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: .75rem;    
+}
+
+.form-control {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #292b2c;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+}
+
+.submit-btn-wrapper {
+    margin-top: 4rem;    
+}
+
 @media (max-width: 768px) {
     ul.topnav li a.nav-link {
         display: none;
@@ -214,6 +239,14 @@ header {
     }
     
     .portfolio-wrapper {
+        text-align: center;
+    }
+    
+    .form-group {
+        display: flex;
+    }
+    
+    .submit-btn-wrapper {
         text-align: center;
     }
        
