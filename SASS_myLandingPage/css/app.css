@@ -118,6 +118,33 @@ body {
   color: #363e4e;
   letter-spacing: -0.025em; }
 
+#page-footer {
+  clear: both;
+  background-color: #212630;
+  padding: 25px 0 40px;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.footer-container {
+  padding: 0 10%; }
+  .footer-container .lego-footer {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #FFFCFC; }
+    .footer-container .lego-footer .footer-wrapper {
+      display: inline-block;
+      padding: 20px;
+      flex-wrap: wrap;
+      cursor: pointer; }
+
+.footer-link {
+  margin-right: 36px;
+  color: #FFFCFC;
+  text-decoration: none; }
+  .footer-link:hover {
+    color: #CD4B3D; }
+
 .nav-header {
   padding: 0 0 10px;
   background-color: #fff; }
