@@ -25,12 +25,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <div className="container App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React.</h2>
         </div>
         <div className="App-main">
-          <Product />
+          <div className="row">
+            <Product className="col-sm-4" price="4.23" title="Cool Toy Gun" imgUrl="https://image.freepik.com/free-photo/swimming-pool-water-with-copy-space_23-2148240100.jpg"/>
+            <Product className="col-sm-4" price="4.23" title="Cool Toy Gun" imgUrl="https://image.freepik.com/free-photo/swimming-pool-water-with-copy-space_23-2148240100.jpg"/>
+            <Product className="col-sm-4" price="4.23" title="Cool Toy Gun" imgUrl="https://image.freepik.com/free-photo/swimming-pool-water-with-copy-space_23-2148240100.jpg"/>
+          </div>
         </div>
       </div>
     );
